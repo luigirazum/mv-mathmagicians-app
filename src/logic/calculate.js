@@ -74,7 +74,7 @@ export default function calculate(obj, buttonName) {
       };
     }
     // '=' with no operation, nothing to do
-    return {};
+    return { ...obj };
   }
 
   if (buttonName === '+/-') {
