@@ -1,15 +1,17 @@
 import PropTypes from 'proptypes';
 
-const Display = ({ content }) => (
-  <p className="display">{content}</p>
+const Display = ({ content, tbindex }) => (
+  <p className="display" tabIndex={tbindex}>{content}</p>
 );
 
 Display.propTypes = {
   content: PropTypes.string,
+  tbindex: PropTypes.number,
 };
 
 Display.defaultProps = {
   content: '0',
+  tbindex: 1,
 };
 
 export default Display;
