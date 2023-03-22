@@ -1,7 +1,9 @@
 import PropTypes from 'proptypes';
 
 const Display = ({ content, tbindex }) => (
-  <p className="display" tabIndex={tbindex}>{content}</p>
+  <p className="display" tabIndex={tbindex}>
+    {content || 0}
+  </p>
 );
 
 Display.propTypes = {
