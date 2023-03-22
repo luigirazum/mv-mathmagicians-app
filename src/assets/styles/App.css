@@ -61,6 +61,7 @@ body {
   background-color: var(--calc-bg-color);
   min-inline-size: calc(12 * 2.5ch);
   display: grid;
+  gap: 0;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     'dsp dsp dsp dsp'
@@ -75,7 +76,6 @@ body {
 .display,
 button {
   border: var(--calc-border);
-  order: 1;
 }
 
 .display {
@@ -92,8 +92,8 @@ button {
 button {
   display: inline-block;
   padding-block: 0.9em;
-  color: inherit;
-  background-color: inherit;
+  color: var(--black-000);
+  background-color: var(--calc-bg-color);
   font-weight: bold;
   outline: none;
 }
@@ -103,7 +103,7 @@ button:hover {
 }
 
 button:active {
-  background-color: var(--gray-43);
+  background-color: var(--calc-ac-color);
 }
 
 .clr { grid-area: clr; }
