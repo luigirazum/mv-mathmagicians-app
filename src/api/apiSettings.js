@@ -4,7 +4,8 @@ const API_QRY = '?category=';
 const API_URL = `${API_BASE_URL}${API_QRY}`;
 
 const HEADERS_LIST = {
-  'X-Api-Key': API_KEY,
+  'X-Api-Key': `${API_KEY}`,
+  Accept: '*/*',
 };
 
 export { API_URL, HEADERS_LIST };
