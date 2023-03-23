@@ -33,7 +33,6 @@ const App = () => {
         setHasError(false);
       } catch (error) {
         setHasError(true);
-        console.log(error);
       }
 
       setIsLoading(false);
