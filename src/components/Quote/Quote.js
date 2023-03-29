@@ -57,7 +57,7 @@ const Quote = () => {
     <div className="quote">
       <h2>Today&apos;s Quote</h2>
       {isLoading && <p>Daily Quote is Loading...</p>}
-      {hasError && <p>An Error ocurrs while loading the Daily Quote.</p>}
+      {hasError && <p>An Error ocurred while loading the Daily Quote.</p>}
       {!isLoading && !hasError && (
       <>
         <q>
