@@ -1,12 +1,21 @@
-import Calculator from './components/Calculator/Calculator';
-import Quote from './components/Quote/Quote';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import MagicCalculator from './pages/MagicCalculator';
+import DailyQuote from './pages/DailyQuote';
+import NotFound from './pages/NotFound';
 import './assets/styles/App.css';
 
 const App = () => (
   <>
-    <h1>Welcome to Math Magicians</h1>
-    <Calculator />
-    <Quote />
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/calculator" element={<MagicCalculator />} />
+        <Route path="/quote" element={<DailyQuote />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   </>
 );
 
