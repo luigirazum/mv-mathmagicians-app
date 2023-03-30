@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import Layout from './pages/Layout';
-import Home from './pages/Home';
-import MagicCalculator from './pages/MagicCalculator';
-import DailyQuote from './pages/DailyQuote';
-import NotFound from './pages/NotFound';
-import './assets/styles/App.css';
+import Layout from '../pages/Layout';
+import Home from '../pages/Home';
+import MagicCalculator from '../pages/MagicCalculator';
+import DailyQuote from '../pages/DailyQuote';
+import NotFound from '../pages/NotFound';
+import '../styles/App.css';
 
 const App = () => (
   <>
