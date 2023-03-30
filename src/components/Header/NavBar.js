@@ -9,7 +9,10 @@ const NavBar = () => {
 
     return (
       <li key={id}>
-        <NavLink to={path}>
+        <NavLink
+          to={path}
+          className="appLink"
+        >
           {name}
         </NavLink>
       </li>
