@@ -21,7 +21,7 @@ I'm building this application to learn how to use React.
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  <!-- - [� Live Demo ](#-live-demo-) -->
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -60,6 +60,8 @@ By building this application, I'm learning how to use React.
   <img src="src/assets/screenshots/math_magicians_quote.png" alt="Quote Page" width="600" height="auto" />
 </p>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Below you can see how the App is working.
 
 <p>
@@ -68,6 +70,8 @@ By building this application, I'm learning how to use React.
 </p>
 
 </div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -94,14 +98,14 @@ This project was bootstrapped with:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!--
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://mv-math-magicians.onrender.com/" target="_blank" rel="noopener noreferrer">Math Magicians - Live Demo</a>
+- <a href="https://math-magicians-react-app-pr1d.onrender.com/" target="_blank" rel="noopener noreferrer">Math Magicians - React App</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
