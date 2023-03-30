@@ -55,17 +55,16 @@ const Quote = () => {
 
   return (
     <div className="quote">
-      <h2>Today&apos;s Quote</h2>
-      {isLoading && <p>Daily Quote is Loading...</p>}
-      {hasError && <p>An Error ocurrs while loading the Daily Quote.</p>}
+      {isLoading && <p className="loading">Daily Quote is Loading...</p>}
+      {hasError && <p className="error">An Error ocurred while loading the Daily Quote.</p>}
       {!isLoading && !hasError && (
       <>
-        <q>
+        <blockquote>
           {quote}
-        </q>
-        <p>
-          {author}
-        </p>
+          <span>
+            {author}
+          </span>
+        </blockquote>
       </>
       ) }
     </div>

@@ -7,7 +7,7 @@
 
 ### Math Magicians
 "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:<br>
-1> Make simple calculations, and<br>2> Read a random math-related quote.<br />
+1> Make simple calculations, and<br>2> Read a random inspirational quote.<br />
 I'm building this application to learn how to use React.
 
 </div>
@@ -16,7 +16,8 @@ I'm building this application to learn how to use React.
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[Math Magicians\] ](#-math-magicians-)
-    - [Below you can see the wireframe for this App.](#below-you-can-see-the-wireframe-for-this-app)
+    - [Screenshots of how the App looks.](#below-you-can-see-how-the-app-looks)
+    - [Watch a demo of the App working.](#below-you-can-see-how-the-app-is-working)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -36,30 +37,34 @@ I'm building this application to learn how to use React.
 
 *[Math Magicians]* is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 - Make simple calculations.
-- Read a random math-related quote.
+- Read a random inspirational quote.
 
 By building this application, I'm learning how to use React.
 
 
 <div align="center">
 
-### Below you can see the wireframe for this App.
+### Below you can see how the App looks.
 
 <p>
-  <sup>It will have a <b>Home Page</b> that gives the Welcome to its visitors.</sup><br>
-  <img src="src/assets/wireframe/math_magicians_home.png" alt="Home Page" width="600" height="auto" />
-</p>
-<p>
-  <sup>It will have a fully functional <b>Calculator</b> to do basic aritmethic operations.</sup><br>
-  <img src="src/assets/wireframe/calculator.png" alt="Calculator" width="250" height="auto" />
+  <sup>It has a <b>Home Page</b> that gives the Welcome to its visitors.</sup><br>
+  <img src="src/assets/screenshots/math_magicians_home.png" alt="Home Page" width="600" height="auto" />
 </p>
 <p>
   <sup>a <b>Calculator Page</b> where you can play with the Calculator embeded.</sup><br>
-  <img src="src/assets/wireframe/math_magicians_calculator.png" alt="Calculator Page" width="600" height="auto" />
+  <img src="src/assets/screenshots/math_magicians_calculator.png" alt="Calculator Page" width="600" height="auto" /><br>
+  <sup>It has a fully functional <b>Calculator</b> to do basic aritmethic operations.</sup>
 </p>
 <p>
-  <sup>And also a <b>Quotes Page</b> that shows a Daily Random Quote from some mathematician.</sup><br>
-  <img src="src/assets/wireframe/math_magicians_quote.png" alt="Quotes Page" width="600" height="auto" />
+  <sup>And also a <b>Quote Page</b> that shows a Daily Quote to get some inspiration.</sup><br>
+  <img src="src/assets/screenshots/math_magicians_quote.png" alt="Quote Page" width="600" height="auto" />
+</p>
+
+### Below you can see how the App is working.
+
+<p>
+  <sup>This is a live demo of the Full Math Magicians Site working.</sup><br>
+  <img src="src/assets/demo/math-magicians-full.gif" alt="Full Website" width="600" height="auto" />
 </p>
 
 </div>
@@ -70,8 +75,12 @@ By building this application, I'm learning how to use React.
 This project was bootstrapped with:
   <ul>
     <li>
-      <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-      <img align="center" title="ReactJS" alt="react js" width="20px" height="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> Create React App</a>
+      <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+      <img align="center" title="ReactJS" alt="react js" width="20px" height="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> React</a>
+    </li>
+    <li>
+      <a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">
+      <img align="center" title="Create React App CLI" alt="create react app" width="20px" height="20px" src="https://create-react-app.dev/img/logo.svg" /> Create React App</a>
     </li>
   </ul>
 
@@ -100,7 +109,12 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need `git` locally installed. Please got to [Getting Started - Installing Git guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the steps described for your system to install `git`.
+ - In order to run this project locally you need `git` installed. Please got to [Getting Started - Installing Git guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the steps described for your system to install `git`.
+
+ - You must have Node installed on our machine to access the NPM (Node Package Manager) tool.
+  Run `node -v` and `npm -v` in the terminal to see if you have node and npm installed, respectively. Ensure you have node>=14.0.0 and npm>=5.6\
+  If you don’t have them installed, head to [Node](https://nodejs.org/) to download and install the latest stable version.
+
 
 ### Setup
 
@@ -175,7 +189,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] *Use an API to generate the Quotes more dyncamically.*
 - [ ] *Add a Math Challenges page to have some fun.*
 - [ ] *Add effects to the Calculator buttons, so you can see when they are pressed.*
 
