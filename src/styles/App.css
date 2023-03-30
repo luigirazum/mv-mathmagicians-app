@@ -317,8 +317,7 @@ button:active {
 }
 
 .quote {
-  padding-inline: 6em 3em;
-  padding-block-start: 1em;
+  padding-inline: 4.5em 3em;
   font-family: var(--ff-inter);
 }
 
@@ -334,7 +333,7 @@ button:active {
 }
 
 blockquote {
-  font-size: var(--fs-apptitle);
+  font-size: var(--fs-subtitle);
   font-weight: var(--fw-semibold);
   color: var(--primary-color);
   letter-spacing: -1.5px;
@@ -346,32 +345,32 @@ blockquote::before {
   content: open-quote;
   position: absolute;
   left: -3ch;
-  top: 2.125ch;
+  top: 1.5ch;
   font-family: var(--ff-dynapuff);
   font-weight: var(--fw-regular);
   color: var(--secondary-color);
   text-shadow: 1px 0.5px var(--primary-color);
-  scale: 6;
+  scale: 4.5;
 }
 
 blockquote::after {
   content: close-quote;
   position: absolute;
-  right: -1.5ch;
-  bottom: -0.25ch;
+  right: -1.45ch;
+  bottom: -0.2ch;
   font-family: var(--ff-dynapuff);
   font-weight: var(--fw-regular);
   color: var(--primary-color);
   text-shadow: -1px 1px var(--secondary-color);
-  scale: 2.5;
+  scale: 2;
 }
 
 span {
   display: block;
-  padding-block-start: 0.5em;
+  padding-block-start: 0.35em;
   font-family: var(--ff-dynapuff);
   font-weight: var(--fw-medium);
   color: var(--active-color);
-  filter: opacity(0.75);
+  filter: opacity(0.85);
   text-align: end;
 }
