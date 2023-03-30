@@ -1,25 +1,30 @@
 const Home = () => (
   <>
-    <h1>Hello there, Welcome!</h1>
+    <h1>Hello there!</h1>
+    <p>Welcome to Math Magicians, your go-to destination for all things math!</p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ut labore et dolore magna aliqua.
-      Fermentum sed. Suspendisse faucibus interdum posuere lorem. Vulputate mi sit amet mauris.
-      Diam phasellus vestibulum lorem sed. Id neque aliquam vestibulum morbi blandit cursus.
-      Facilisis mauris sit amet massa. A pellentesque sit amet porttitor eget dolor morbi non arcu.
-      Iaculis urna id volutpat lacus. Nulla facilisi morbi tempus iaculis urna id volutpat.
-      Lectus urna duis convallis convallis tellus id interdum velit.
-      Urna id volutpat lacus laoreet non curabitur gravida arcu.
+      Whether you&apos;re a student, a teacher, or just someone who loves numbers,
+      you&apos;ll find something of interest on our website. From our basic Calculator,
+      which you can use to perform simple calculations, to our Quote page,
+      which provides you with a daily dose of inspiration,
+      Math Magicians has something for everyone.
     </p>
     <p>
-      Cursus mattis molestie a iaculis at erat pellentesque. Ac tortor vitae purus faucibus ornare.
-      Tempus imperdiet nulla malesuada pellentesque elit eget  ut ornare lectus sit amet.
-      Augue ut lectus vel pharetra vel. Ac tortor dignissim convallis aenean et tortor at risus.
-      Ac tortor vitae purus faucibus ornare. Sed vulputate mi sit amet. Duis at faucibus molestie.
-      Tincidunt vitae semper quis lectus nulla. Ultricies tristique nulla aliquet enim tortor at.
-      Viverra justo nec ultrices dui sapien eget mi proin sed.Cursus aliquam sollicitudin aliquam.
-      Vitae curabitur vitae nunc sed. Interdum posuere lorem ipsum dolor. Ac felis donec et odio.
+      We believe that math is more than just numbers and formulas. It&apos;s a way of thinking
+      and problem-solving that can be applied to all areas of life. That&apos;s why we strive
+      to make math fun and accessible to all, whether you&apos;re a beginner or an expert.
     </p>
-
+    <p>
+      So go ahead and explore our website! Head over to our Calculator page to start
+      crunching numbers. And don&apos;t forget to stop by our Quote page for a daily
+      dose of inspiration.
+    </p>
+    <p>
+      Thank you for choosing Math Magicians as your math resource.
+    </p>
+    <p>
+      We hope you enjoy your time on our website!
+    </p>
   </>
 );
 
