@@ -1,0 +1,376 @@
+/* Main styles for the App */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+
+:root {
+  /* font styles */
+  --ff-inter: 'Inter', sans-serif;
+  --ff-dynapuff: 'DynaPuff', cursive;
+  --ff-sans: sans-serif;
+  --ff-serif: serif;
+
+  /* font-weights */
+  --fw-extralight: 200;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* font-sizes */
+  --fs-base: 1vw;
+  --fs-normal: calc(var(--fs-base) + 0.65rem);
+  --fs-title: calc(var(--fs-normal) + 0.55rem);
+  --fs-subtitle: calc(var(--fs-normal) + 0.25rem);
+  --fs-link: calc(var(--fs-normal) * 1.0125);
+  --fs-apptitle: calc(var(--fs-normal) + 0.75rem);
+
+  /* color palette */
+  --red-47: hsl(0, 91%, 47%); /* #f5913e */
+  --orange-47: hsl(27, 95%, 47%); /* #f5913e */
+  --orange-60: hsl(27, 90%, 60%); /* #f5913e */
+  --orange-55: hsl(27, 90%, 55%); /* #f2740d */
+  --orange-50: hsl(27, 90%, 50%); /* #f2740d */
+  --dark-gray-55: hsl(236, 6%, 55%); /* #858693 */
+  --gray-88: hsl(0, 0%, 88%); /* #e0e0e0 */
+  --gray-73: hsl(0, 0%, 73%); /* #bababa */
+  --gray-63: hsl(0, 0%, 63%); /* #ccc */
+  --gray-43: hsl(0, 0%, 43%); /* #ccc */
+  --black-000: hsl(0, 0%, 0%); /* #000 */
+  --white-fff: hsl(0, 0%, 100%);
+
+  /* color assignment */
+  --primary-color: var(--orange-47);
+  --secondary-color: var(--dark-gray-55);
+  --active-color: var(--black-000);
+  --msg-color: var(--gray-73);
+  --err-color: var(--red-47);
+  --calc-fg-color: var(--black-00);
+  --calc-bg-color: var(--gray-88);
+  --calc-hv-color: var(--gray-63);
+  --calc-ac-color: var(--gray-43);
+  --disp-fg-color: var(--white-fff);
+  --disp-bg-color: var(--dark-gray-55);
+  --bsop-bg-color: var(--orange-60);
+  --bsop-hv-color: var(--orange-55);
+  --bsop-ac-color: var(--orange-50);
+  --calc-border: 1px solid var(--gray-73);
+}
+
+/* Global Resets */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-inter);
+  font-size: var(--fs-normal);
+}
+
+body {
+  margin: 0;
+  padding-block: 0 1em;
+}
+
+h1,
+h2 {
+  font-family: var(--ff-dynapuff);
+  font-weight: var(--fw-regular);
+  color: var(--primary-color);
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+  padding-block: 0.2em 0.4em;
+}
+
+h1 {
+  font-size: var(--fs-title);
+}
+
+h2 {
+  font-size: var(--fs-subtitle);
+}
+
+#root {
+  display: flex;
+  gap: 1.5em;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  padding-block: 0.75em 0.5em;
+  box-shadow: 0 0 4px var(--gray-63);
+  padding-inline: 5vw;
+}
+
+.appTitle {
+  font-family: var(--ff-dynapuff);
+  font-size: var(--fs-apptitle);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  color: var(--primary-color);
+  text-shadow: 2px 2px var(--secondary-color);
+  display: flex;
+  gap: 0.125em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+svg {
+  fill: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 2px 1.5px var(--secondary-color);
+  max-block-size: 1.125em;
+}
+
+.appTitle:hover {
+  color: var(--secondary-color);
+  text-shadow: 2px 2px var(--primary-color);
+}
+
+.appTitle:hover svg {
+  fill: var(--secondary-color);
+  box-shadow: 2px 1.5px var(--primary-color);
+}
+
+.appTitle:active {
+  color: var(--active-color);
+  text-shadow: 2px 2px var(--secondary-color);
+}
+
+.appTitle:active svg {
+  fill: var(--active-color);
+  box-shadow: 2px 1.5px var(--secondary-color);
+}
+
+nav {
+  margin-inline-start: auto;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding-block: 0.15em;
+  padding-inline: 0;
+  display: flex;
+  gap: 0.75em;
+}
+
+li {
+  padding-block: 0.25em;
+}
+
+.appLink {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-link);
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  text-shadow: 1px 1px var(--primary-color);
+  letter-spacing: -1px;
+}
+
+.appLink:hover {
+  color: var(--primary-color);
+  text-shadow: 1px 1px var(--secondary-color);
+  filter: saturate(2.5) brightness(1);
+}
+
+.appLink:active {
+  color: var(--active-color);
+  text-shadow: 1px 1px var(--secondary-color);
+}
+
+.appLink.active {
+  color: var(--primary-color);
+  text-shadow: 1px 1px var(--active-color);
+  filter: saturate(1);
+}
+
+.appLink.active:hover {
+  filter: saturate(2.5) brightness(1);
+}
+
+main {
+  max-inline-size: 90vw;
+  margin-inline: 5vw;
+}
+
+.magicCalculator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+
+  --calculator-basis: 20ch;
+}
+
+.calcInfo {
+  flex: 1.5 0 var(--calculator-basis);
+}
+
+.calculator {
+  flex: 1 0 var(--calculator-basis);
+  margin-block-start: 2.75em;
+  margin-inline-start: auto;
+  font-family: var(--ff-sans);
+  font-weight: bold;
+  color: var(--calc-fg-color);
+  background-color: var(--calc-bg-color);
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'dsp dsp dsp dsp'
+    'clr neg pct div'
+    'nm7 nm8 nm9 tms'
+    'nm4 nm5 nm6 mns'
+    'nm1 nm2 nm3 pls'
+    'nm0 nm0 dec eql';
+}
+
+@media (max-width: 400px) {
+  .magicCalculator {
+    gap: 0.75em;
+  }
+
+  .calculator {
+    margin-block-start: 0;
+  }
+}
+
+.calculator,
+.display,
+button {
+  border: var(--calc-border);
+}
+
+.display {
+  font-family: var(--ff-serif);
+  font-size: 1.5rem;
+  grid-area: dsp;
+  text-align: end;
+  padding-inline: 0.25em;
+  padding-block: 0.4em;
+  color: var(--disp-fg-color);
+  background-color: var(--disp-bg-color);
+}
+
+button {
+  display: inline-block;
+  padding-block: 1.25em;
+  color: var(--black-000);
+  background-color: var(--calc-bg-color);
+  font-weight: var(--fw-black);
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--calc-hv-color);
+}
+
+button:active {
+  background-color: var(--calc-ac-color);
+}
+
+.clr { grid-area: clr; }
+.neg { grid-area: neg; }
+.pct { grid-area: pct; }
+.div { grid-area: div; }
+.nm7 { grid-area: nm7; }
+.nm8 { grid-area: nm8; }
+.nm9 { grid-area: nm9; }
+.tms { grid-area: tms; }
+.nm4 { grid-area: nm4; }
+.nm5 { grid-area: nm5; }
+.nm6 { grid-area: nm6; }
+.mns { grid-area: mns; }
+.nm1 { grid-area: nm1; }
+.nm2 { grid-area: nm2; }
+.nm3 { grid-area: nm3; }
+.pls { grid-area: pls; }
+.nm0 { grid-area: nm0; }
+.dec { grid-area: dec; }
+.eql { grid-area: eql; }
+
+.basicOperator {
+  background-color: var(--bsop-bg-color);
+}
+
+.basicOperator:hover {
+  background-color: var(--bsop-hv-color);
+}
+
+.basicOperator:active {
+  background-color: var(--bsop-ac-color);
+}
+
+.quote {
+  padding-inline: 4.5em 3em;
+  font-family: var(--ff-inter);
+}
+
+.loading,
+.error {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-bold);
+  color: var(--msg-color);
+}
+
+.error {
+  color: var(--red-47);
+}
+
+blockquote {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-semibold);
+  color: var(--primary-color);
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  position: relative;
+}
+
+blockquote::before {
+  content: open-quote;
+  position: absolute;
+  left: -3ch;
+  top: 1.5ch;
+  font-family: var(--ff-dynapuff);
+  font-weight: var(--fw-regular);
+  color: var(--secondary-color);
+  text-shadow: 1px 0.5px var(--primary-color);
+  scale: 4.5;
+}
+
+blockquote::after {
+  content: close-quote;
+  position: absolute;
+  right: -1.45ch;
+  bottom: -0.2ch;
+  font-family: var(--ff-dynapuff);
+  font-weight: var(--fw-regular);
+  color: var(--primary-color);
+  text-shadow: -1px 1px var(--secondary-color);
+  scale: 2;
+}
+
+span {
+  display: block;
+  padding-block-start: 0.35em;
+  font-family: var(--ff-dynapuff);
+  font-weight: var(--fw-medium);
+  color: var(--active-color);
+  filter: opacity(0.85);
+  text-align: end;
+}
